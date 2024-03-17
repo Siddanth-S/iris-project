@@ -75,6 +75,7 @@ Defines a zone named mylimit and allocates 10 megabytes of memory to store the s
 Tested it out with **Apache Bench** (ab)  :  ab -n 100 -c 10 http://localhost:8080/ 
 Here's the result : 
 
+```
 Benchmarking localhost (be patient).....done
 
 
@@ -116,7 +117,7 @@ Percentage of the requests served within a certain time (ms)
   99%   4145
  100%   4145 (longest request)
 
-
+ ```
 Observations from Benchmark
 Non-2xx Responses: You observed 67 non-2xx responses out of 100 total requests, which indicates that some requests were either queued (delayed) or rejected due to exceeding the rate limit.
 Failed Requests: The presence of failed requests due to content length mismatches likely reflects varied responses, such as HTTP 503 Service Temporarily Unavailable status codes, which are served when requests exceed your configured rate limit and burst capacity.
