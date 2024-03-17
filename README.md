@@ -33,11 +33,10 @@ I introduced a MySQL container to act as database. Pulled the mysql:latest image
  
 docker-compose up  #to launch the containers simultaneously
 
-![Screenshot 2024-03-17 at 11 54 34 PM](https://github.com/Ranjan-S1227/iris-project/assets/76945354/5718265a-88f3-49d5-b1ae-3f51090f6d75)
 
 *Connection Successful !!*
 
- ![Screenshot 2024-03-18 at 12 24 38 AM](https://github.com/Ranjan-S1227/iris-project/assets/76945354/b0fc3600-c98a-4055-b06e-2ef4cc309f75)
+![WhatsApp Image 2024-03-18 at 12 50 37 AM (1)](https://github.com/Siddanth-S/iris-project/assets/158839826/32a66fbd-fd6a-44bd-95a8-b7769798fb90)
 
 
 ## 3. Introducing Nginx as a Reverse Proxy
@@ -51,7 +50,7 @@ Here's the Nginx config : [Nginx Conf](https://github.com/Siddanth-S/iris-projec
 
 I setup to include two additional Rails containers, ensuring our application could handle increased traffic gracefully. This scaling was facilitated by Nginx's load balancing feature, which distributed incoming requests evenly across the three containers. This approach improved application's availability. 
 
-![Screenshot 2024-03-17 at 11 57 17 PM](https://github.com/Ranjan-S1227/iris-project/assets/76945354/5a573228-bd8c-4a03-a2f6-e257d1dffb72)
+![WhatsApp Image 2024-03-18 at 12 50 37 AM](https://github.com/Siddanth-S/iris-project/assets/158839826/76ff4096-848c-424a-88f9-fc72403a9e08)
 
 
 ## 5.  Persisting Data and Configurations
@@ -137,7 +136,6 @@ These observations collectively indicate that the rate limiting setup is active 
 All the tasks(except Bonus) are completed and the application is perfectly running in the local(development) environment. 
 
 
-![Screenshot 2024-03-18 at 12 08 32 AM](https://github.com/Ranjan-S1227/iris-project/assets/76945354/3247dbad-9934-4355-a847-d16dbe046129)
+![WhatsApp Image 2024-03-18 at 12 51 03 AM](https://github.com/Siddanth-S/iris-project/assets/158839826/99dbe5e6-f64a-4a47-a7d7-304f663b8bf9)
 
-
-![Screenshot 2024-03-18 at 12 09 08 AM](https://github.com/Ranjan-S1227/iris-project/assets/76945354/0f159f91-968c-4b01-bb9f-ff228aa80605)
+![WhatsApp Image 2024-03-18 at 12 51 10 AM](https://github.com/Siddanth-S/iris-project/assets/158839826/32ca495d-6f56-4da7-a643-8f6f1d48b0bc)
