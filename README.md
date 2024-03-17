@@ -30,8 +30,9 @@ But in this it's not necessary to run this command as running docker-compose.yml
 
 I introduced a MySQL container to act as database. Pulled the mysql:latest image from the Docker Hub. Then configured the mysql environmental variables as below inside the [docker-compose.yml](https://github.com/Siddanth-S/iris-project/blob/main/docker-compose.yml). By leveraging Docker Compose, I orchestrated the simultaneous launch of the application and database container. A significant consideration was ensuring the database port was not exposed externally, mitigating potential security risks. This setup also allowed us to expose our application on port 8080, enabling access from "localhost:8080".
 
- 
+ ```
 docker-compose up  #to launch the containers simultaneously
+```
 
 ![WhatsApp Image 2024-03-18 at 12 51 30 AM](https://github.com/Siddanth-S/iris-project/assets/158839826/f3b88a80-0921-41e6-a48a-4048cf1734c2)
 
@@ -52,7 +53,7 @@ Here's the Nginx config : [Nginx Conf](https://github.com/Siddanth-S/iris-projec
 
 I setup to include two additional Rails containers, ensuring our application could handle increased traffic gracefully. This scaling was facilitated by Nginx's load balancing feature, which distributed incoming requests evenly across the three containers. This approach improved application's availability. 
 
-![WhatsApp Image 2024-03-18 at 12 50 37 AM](https://github.com/Siddanth-S/iris-project/assets/158839826/76ff4096-848c-424a-88f9-fc72403a9e08)
+![WhatsApp Image 2024-03-18 at 12 50 52 AM (1)](https://github.com/Siddanth-S/iris-project/assets/158839826/1ac925b5-fba2-4bf1-b4ad-8eef1fdf97a8)
 
 
 ## 5.  Persisting Data and Configurations
