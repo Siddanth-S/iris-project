@@ -71,9 +71,9 @@ Here's the compose file : [docker-compose.yml](https://github.com/Siddanth-S/iri
 ## 7. Implementing Rate Limiting with Nginx
 
 Implementing rate limiting through Nginx is a strategy to prevent potential denial-of-service (DoS) attacks caused by an overwhelming number of requests. By setting thresholds for the number of allowed requests per second ,  ensured the application remained available to legitimate users.
-
+```
 limit_req_zone $binary_remote_addr zone=mylimit:10m rate=5r/s;
-
+```
 Defines a zone named mylimit and allocates 10 megabytes of memory to store the states of clients' addresses. rate=5r/s: Specifies the allowed request rate, which is 5 requests per second in this case.
 Tested it out with **Apache Bench** (ab)  :  ab -n 100 -c 10 http://localhost:8080/ 
 Here's the result : 
