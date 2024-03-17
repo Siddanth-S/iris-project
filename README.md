@@ -4,7 +4,7 @@ Hello, this is Siddanth, pursuing Civil Engg. (I year) ! I'm going to guide you 
 
 ## Flow of the application 
 
-![IMG_5446](https://github.com/Ranjan-S1227/iris-project/assets/76945354/adffd6f0-546c-4b89-b3a6-73fffa237e30)
+![1](https://github.com/Siddanth-S/iris-project/assets/158839826/a4c13eeb-f4d9-4e33-85f4-9760e1fdbc5b)
 
 
 ## 1. Dockerizing the Rails Application
@@ -19,7 +19,7 @@ Build the image with the DockerFile:
 yml
 docker build -t my-rails-app .
 
-![Screenshot 2024-03-17 at 11 50 51 PM](https://github.com/Ranjan-S1227/iris-project/assets/76945354/74ec83ea-cbda-44eb-b5fe-fc3bad4f27e9)
+![2](https://github.com/Siddanth-S/iris-project/assets/158839826/f7cbf1d2-b666-40f2-bcb1-80e2ff2e990b)
 
 
 But in this it's not necessary to run this command as running docker-compose.yml is sufficient to run DockerFile and create the application image. 
