@@ -16,8 +16,9 @@ which basically describes installation of all the dependencies, copies the appli
 
 Build the image with the DockerFile:
 
-yml
+```
 docker build -t my-rails-app .
+```
 
 ![2](https://github.com/Siddanth-S/iris-project/assets/158839826/f7cbf1d2-b666-40f2-bcb1-80e2ff2e990b)
 
